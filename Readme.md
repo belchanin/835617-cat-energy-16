@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Анастасия Беликова](https://up.htmlacademy.ru/adaptive/16/user/835617).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор Кан](https://htmlacademy.ru/profile/viktorkan).
 
 ---
 
