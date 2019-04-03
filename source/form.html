@@ -6,13 +6,115 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="#" class="logo page-header__logo">
+      <a href="index.html" class="logo page-header__logo">
         <img class="page-header__logo-image" src="#" alt="Логотип магазина Кэт энерджи" width="" height="">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
       </nav>
     </header>
+    <main class="page-main">
+      <section class="program">
+        <h1 class="program__title">Подбор программы</h1>
+        <p class="program__tagline">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <form action="https://echo.htmlacademy.ru" method="POST" class="program__form">
+          <p class="program__wrap">
+            <label class="program__label" for="name-of-cat">
+              Имя:*
+              <input type="text" class="program__input" name="name-of-cat" value="Барсик">
+            </label>
+          </p>
+          <p class="program__wrap">
+            <label class="program__label">
+              Вес (кг):*
+              <input type="text" class="program__input" name="weight-of-cat" value="7">
+            </label>
+          </p>
+          <p class="program__wrap">
+            <label class="program__label">
+              Возраст (лет):
+              <input type="text" class="program__input" name="age-of-cat" value="7">
+            </label>
+          </p>
+          <ul class="program__radio-list">
+            <li class="program__radio-item">
+              <label class="program__label">
+                <input type="radio" class="program__input" name="program-selection" value="losing-weight" checked>
+                Похудение
+              </label>
+            </li>
+            <li class="program__radio-item">
+              <label class="program__label">
+                <input type="radio" class="program__input" name="program-selection" value="weight-gain">
+                Набор массы
+              </label>
+            </li>
+            <li class="program__radio-item">
+              <label class="program__label">
+                <input type="radio" class="program__input" name="program-selection" value="need-advice">
+                Не знаю (нужен ваш совет)
+              </label>
+            </li>
+          </ul>
+          <fieldset class="program__fieldset">
+            <legend class="program__legend">Контактные данные (владельца кота)</legend>
+            <p class="program__wrap">
+              <label class="program__label">
+                E-mail:*
+                <input type="email" class="program__input" name="email" value="kuklachev@gmail.com">
+              </label>
+            </p>
+            <p class="program__wrap">
+              <label class="program__label">
+                Телефон:*
+                <input type="tel" class="program__input" name="phone-number" value="8 (960) 900-60-90">
+              </label>
+            </p>
+          </fieldset>
+          <fieldset class="program__fieldset">
+            <legend class="program__legend">Комментарий</legend>
+            <textarea name="comment" class="program__textarea">Расскажите обо всех повадках кота</textarea>
+          </fieldset>
+          <fieldset class="program__fieldset">
+            <legend class="program__legend">Дополнительно</legend>
+            <ul class="program__checkbox-list">
+              <li class="program__checkbox-item">
+                <label class="program__label">
+                  <input type="checkbox" class="program__input" name="sweetener" checked>
+                  Сахарозаменитель
+                </label>
+              </li>
+              <li class="program__checkbox-item">
+                <label class="program__label">
+                  <input type="checkbox" class="program__input" name="water">
+                  Питьевая вода
+                </label>
+              </li>
+              <li class="program__checkbox-item">
+                <label class="program__label">
+                  <input type="checkbox" class="program__input" name="milk">
+                  Молоко
+                </label>
+              </li>
+              <li class="program__checkbox-item">
+                <label class="program__label">
+                  <input type="checkbox" class="program__input" name="vitamins">
+                  Витамины
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button program__button">Отправить заявку</button>
+          <p class="program__extra">* — Обязательные поля</p>
+        </form>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Как нас найти:</h2>
+        <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <img src="#" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" class="contacts__map">
+      </section>
+    </main>
     <footer class="page-footer">
       <img src="#" alt="Логотип Cat Energy" class="page-footer__logo">
       <ul class="page-footer__list social-list">
