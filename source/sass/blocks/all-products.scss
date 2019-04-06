@@ -1,0 +1,34 @@
+.all-products {
+  @include list;
+
+  font-family: $font-family-primary;
+
+  background-color: $palette-primary;
+
+  padding-top: 83px;
+  padding-bottom: 25px;
+}
+
+.all-products__text {
+  @include reset;
+
+  font-size: $font-size-secondary;
+  line-height: $line-height-secondary;
+  text-transform: $text-transform-base;
+
+  color: $primary-color;
+
+  margin-bottom: 11px;
+}
+
+.all-products__desc {
+  @include reset;
+
+  font-family: $font-family-secondary;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: $secondary-color;
+
+  margin-bottom: 22px;
+}

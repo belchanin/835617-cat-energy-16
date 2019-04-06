@@ -1,0 +1,43 @@
+.catalog {
+  font-family: $font-family-primary;
+
+  background-color: $palette-primary;
+
+  padding: 25px 20px;
+}
+
+.catalog__list {
+  @include list;
+}
+
+.catalog__item {
+  margin-bottom: 24px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.catalog__title {
+  @include reset;
+
+  font-size: $font-size-secondary;
+  line-height: $line-height-secondary;
+  text-transform: $text-transform-base;
+
+  color: $primary-color;
+
+  margin-bottom: 18px;
+}
+
+.catalog__table-row {
+  font-family: $font-family-secondary;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: $secondary-color;
+}
+
+.catalog__table-header {
+  font-weight: 400;
+}

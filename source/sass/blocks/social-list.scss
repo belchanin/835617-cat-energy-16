@@ -1,0 +1,7 @@
+.social-list {
+  @include list;
+
+  background-color: $palette-tertiary;
+
+  padding: 24px 82px;
+}
