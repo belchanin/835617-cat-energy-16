@@ -1,15 +1,8 @@
-.page-main {
-  background-color: $palette-primary;
-}
-
 .page-main__head {
   @include reset;
 
-  font-family: $font-family-primary;
   font-size: $font-size-headline;
   line-height: $line-height-headline;
-
-  color: $primary-color;
 
   margin-bottom: 36px;
 }

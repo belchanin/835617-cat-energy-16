@@ -2,7 +2,7 @@ $palette-hover: #5eaa2f;
 $color-active: rgba(255, 255, 255, 0.3);
 
 .button {
-  font-family: $font-family-primary;
+  font-family: inherit;
   font-size: $font-size-secondary;
   line-height: $line-height-secondary;
   text-transform: $text-transform-base;

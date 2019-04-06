@@ -1,8 +1,6 @@
 $color-active: rgba(17, 17, 17, 0.3);
 
 .features {
-  background-color: $palette-primary;
-
   padding: 0 20px 32px;
 }
 
@@ -47,7 +45,6 @@ $color-active: rgba(17, 17, 17, 0.3);
 }
 
 .features__link {
-  font-family: $font-family-primary;
   font-size: $font-size-secondary;
   line-height: 16px;
   text-transform: $text-transform-base;

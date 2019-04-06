@@ -2,8 +2,7 @@ $base-color: #ffffff;
 
 .promo {
   background-color: $palette-primary;
-  background-image: url("../img/index-can-mobile@1x.png"),
-                    url("../img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 20px 168px, 0 0;
 
@@ -13,7 +12,6 @@ $base-color: #ffffff;
 .promo__headline {
   @include reset;
 
-  font-family: $font-family-primary;
   font-size: 36px;
   line-height: 36px;
 
@@ -25,8 +23,6 @@ $base-color: #ffffff;
 .promo__slogan {
   @include reset;
 
-  font-family: $font-family-primary;
-  font-size: $font-size-primary;
   line-height: 14px;
   text-transform: $text-transform-base;
 

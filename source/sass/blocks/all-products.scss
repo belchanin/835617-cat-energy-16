@@ -1,10 +1,6 @@
 .all-products {
   @include list;
 
-  font-family: $font-family-primary;
-
-  background-color: $palette-primary;
-
   padding-top: 83px;
   padding-bottom: 25px;
 }
@@ -15,8 +11,6 @@
   font-size: $font-size-secondary;
   line-height: $line-height-secondary;
   text-transform: $text-transform-base;
-
-  color: $primary-color;
 
   margin-bottom: 11px;
 }
