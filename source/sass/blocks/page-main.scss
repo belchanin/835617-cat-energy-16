@@ -1,0 +1,8 @@
+.page-main__head {
+  @include reset;
+
+  font-size: $font-size-headline;
+  line-height: $line-height-headline;
+
+  margin-bottom: 36px;
+}

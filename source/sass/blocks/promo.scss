@@ -1,0 +1,32 @@
+$base-color: #ffffff;
+
+.promo {
+  background-color: $palette-primary;
+  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 20px 168px, 0 0;
+
+  padding: 29px 37px 22px;
+}
+
+.promo__headline {
+  @include reset;
+
+  font-size: 36px;
+  line-height: 36px;
+
+  color: $base-color;
+
+  margin-bottom: 19px;
+}
+
+.promo__slogan {
+  @include reset;
+
+  line-height: 14px;
+  text-transform: $text-transform-base;
+
+  color: $base-color;
+
+  margin-bottom: 302px;
+}

@@ -1,0 +1,13 @@
+.copyright__link {
+  font-family: $font-family-secondary;
+  font-size: $font-size-secondary;
+  line-height: 16px;
+
+  background-color: $palette-tertiary;
+
+  color: $secondary-color;
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
