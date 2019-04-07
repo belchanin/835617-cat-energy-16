@@ -1,0 +1,51 @@
+.application-example {
+  background-color: $palette-tertiary;
+
+  padding: 33px 20px 38px;
+}
+
+.application-example__title {
+  @include reset;
+
+  font-size: $font-size-headline;
+  font-weight: 400;
+  line-height: $line-height-headline;
+
+  margin-bottom: 33px;
+}
+
+.application-example__description {
+  @include reset;
+
+  font-family: $font-family-secondary;
+
+  color: $secondary-color;
+
+  margin-bottom: 27px;
+}
+
+.application-example__table {
+  margin-bottom: 25px;
+}
+
+.application-example__table-header {
+  font-family: $font-family-secondary;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  text-transform: lowercase;
+
+  color: $secondary-color;
+}
+
+.application-example__table-data {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.application-example__text {
+  line-height: $line-height-secondary;
+  text-transform: $text-transform-base;
+
+  margin-bottom: 44px;
+}
