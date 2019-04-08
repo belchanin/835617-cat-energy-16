@@ -1,0 +1,99 @@
+.program {
+  padding: 30px 20px 34px;
+}
+
+.program__title {
+  @include reset;
+
+  font-size: $font-size-headline;
+  font-weight: 400;
+  line-height: $line-height-headline;
+
+  margin-bottom: 35px;
+}
+
+.program__tagline {
+  @include reset;
+
+  text-transform: $text-transform-base;
+
+  margin-bottom: 39px;
+}
+
+.program__wrap {
+  @include reset;
+
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.program__label {
+  text-transform: $text-transform-base;
+
+  color: $tertiary-color;
+}
+
+.program__radio-list {
+  @include list;
+
+  margin-bottom: 31px;
+}
+
+.program__radio-item {
+  margin-bottom: 26px;
+}
+
+.program__input,
+.program__textarea {
+  text-transform: $text-transform-base;
+
+  color: $secondary-color;
+
+  border: 1px solid #cdcdcd;
+  padding: 7px 15px;
+}
+
+.program__fieldset {
+  @include reset;
+
+  border: none;
+
+  margin-bottom: 31px;
+}
+
+.program__legend {
+  font-size: 24px;
+  line-height: 24px;
+
+  margin-bottom: 30px;
+}
+
+.program__checkbox-list {
+  @include list;
+
+  margin-bottom: 12px;
+}
+
+.program__checkbox-item {
+  margin-bottom: 24px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.program__button {
+  margin-bottom: 23px;
+}
+
+.program__extra {
+  @include reset;
+
+  font-family: $font-family-secondary;
+  line-height: 16px;
+
+  color: $secondary-color;
+}

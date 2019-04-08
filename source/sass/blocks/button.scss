@@ -1,6 +1,3 @@
-$palette-hover: #5eaa2f;
-$color-active: rgba(255, 255, 255, 0.3);
-
 .button {
   font-family: inherit;
   font-size: $font-size-secondary;
@@ -11,19 +8,19 @@ $color-active: rgba(255, 255, 255, 0.3);
 
   padding: 11px 109px;
 
-  color: #ffffff;
+  color: $quaternary-color;
 
   background-color: $palette-secondary;
 
   &:hover,
   &:focus {
-    background-color: $palette-hover;
+    background-color: $primary-palette-hover;
 
     cursor: pointer;
   }
 
   &:active {
-    color: $color-active;
+    color: $primary-color-active;
   }
 
   &--small {
@@ -42,11 +39,11 @@ $color-active: rgba(255, 255, 255, 0.3);
 
     &:hover,
     &:focus {
-      background-color: #ebebeb;
+      background-color: $secondary-palette-hover;
     }
 
     &:active {
-      color: rgba(68, 68, 68, 0.3);
+      color: $secondary-color-active;
     }
   }
 }

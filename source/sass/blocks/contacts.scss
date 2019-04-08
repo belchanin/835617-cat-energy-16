@@ -1,0 +1,28 @@
+.contacts {
+  background-color: $palette-tertiary;
+
+  &--white {
+    background-color: $palette-primary;
+  }
+}
+
+.contacts__wrap {
+  padding: 31px 25px 28px 19px;
+}
+
+.contacts__text {
+  @include reset;
+
+  font-size: $font-size-secondary;
+  line-height: $line-height-secondary;
+  text-transform: $text-transform-base;
+}
+
+.contacts__address {
+  @include reset;
+
+  font-family: $font-family-secondary;
+  line-height: $line-height-secondary;
+
+  color: $secondary-color;
+}
