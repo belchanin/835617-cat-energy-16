@@ -2,6 +2,8 @@ body {
   margin: 0;
   padding: 0;
 
+  min-width: 320px;
+
   font-family: $font-family-primary;
   font-size: $font-size-primary;
   line-height: $line-height-primary;
@@ -13,4 +15,23 @@ body {
 
 a {
   text-decoration: none;
+
+  display: block;
+
+  color: $primary-color;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }

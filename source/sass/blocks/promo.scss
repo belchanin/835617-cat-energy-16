@@ -4,7 +4,10 @@
   background-repeat: no-repeat;
   background-position: 20px 168px, 0 0;
 
-  padding: 29px 37px 22px;
+  padding: 29px 20px 22px;
+  margin: 0 auto;
+
+  text-align: center;
 }
 
 .promo__headline {
@@ -28,4 +31,35 @@
   color: $quaternary-color;
 
   margin-bottom: 302px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    padding: 37px 30px 529px 120px;
+
+    background-image: url("../img/index-can-tablet@1x.jpg");
+    background-position: 30px 232px;
+
+    text-align: left;
+  }
+
+  .promo__headline {
+    font-size: 60px;
+    line-height: 60px;
+
+    color: $primary-color;
+
+    width: 415px;
+
+    margin-bottom: 33px;
+  }
+
+  .promo__slogan {
+    font-size: 20px;
+    line-height: 20px;
+
+    color: $primary-color;
+
+    margin-bottom: 48px;
+  }
 }

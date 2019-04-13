@@ -4,9 +4,13 @@
   line-height: $line-height-secondary;
   text-transform: $text-transform-base;
 
+  width: 280px;
   border: none;
 
-  padding: 11px 109px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+
+  text-align: center;
 
   color: $quaternary-color;
 
@@ -25,14 +29,11 @@
 
   &--small {
     font-size: $font-size-primary;
+    font-weight: 400;
     line-height: $line-height-primary;
-
-    padding: 11px 74px;
   }
 
   &--grey {
-    padding: 11px 95px;
-
     color: $secondary-color;
 
     background-color: $palette-tertiary;
@@ -45,5 +46,21 @@
     &:active {
       color: $secondary-color-active;
     }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    width: 249px;
+
+    &--small {
+      width: 245px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    width: 169px;
   }
 }
