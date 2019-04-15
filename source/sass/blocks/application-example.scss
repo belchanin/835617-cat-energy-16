@@ -49,3 +49,84 @@
 
   margin-bottom: 44px;
 }
+
+.application-example__wrap {
+  // временно
+  min-height: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .application-example {
+    padding: 51px 0 0;
+
+    background-color: $palette-primary;
+  }
+
+  .application-example__title {
+    font-size: 60px;
+
+    margin-bottom: 60px;
+    padding: 0 30px;
+  }
+
+  .application-example__description {
+    font-size: $font-size-secondary;
+    line-height: 24px;
+
+    margin-bottom: 56px;
+  }
+
+  .application-example__wrap {
+    // временно
+    min-height: 462px;
+
+    padding: 0 30px;
+
+    &:last-of-type {
+      background-color: $palette-tertiary;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .application-example {
+    background-color: $palette-tertiary;
+
+    padding-top: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .application-example__title {
+    background-color: $palette-primary;
+
+    padding: 90px 110px 66px;
+    margin-bottom: 0;
+    width: 1440px;
+  }
+
+  .application-example__wrap {
+    &:first-of-type {
+      padding: 75px 0 75px 110px;
+
+      width: 680px;
+    }
+
+    &:last-of-type {
+      padding: 75px 110px 75px 0;
+
+      width: 760px;
+    }
+  }
+
+  .application-example__description {
+    width: 430px;
+
+    margin-bottom: 71px;
+  }
+
+  .application-example__table {
+    margin-bottom: 59px;
+  }
+}
