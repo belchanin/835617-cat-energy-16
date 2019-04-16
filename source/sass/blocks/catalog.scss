@@ -65,7 +65,7 @@
 
 @media (min-width: $tablet-width) {
   .catalog {
-    padding: 0 30px 70px;
+    padding: 0 30px;
   }
 
   .catalog__list {
@@ -79,7 +79,8 @@
   .catalog__item {
     width: 324px;
     padding: 165px 37px 40px;
-    margin-bottom: 140px;
+    margin-top: 70px;
+    margin-bottom: 70px;
 
     background-color: $palette-tertiary;
 
@@ -91,7 +92,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog {
-    padding: 0 110px 80px;
+    padding: 0;
   }
 
   .catalog__list {

@@ -49,3 +49,94 @@
 
   margin-bottom: 44px;
 }
+
+.application-example__statistic,
+.application-example__presentation {
+  // временно
+  min-height: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .application-example {
+    padding: 51px 0 0;
+
+    background-color: $palette-primary;
+  }
+
+  .application-example__title {
+    font-size: 60px;
+
+    margin-bottom: 60px;
+    padding: 0 30px;
+  }
+
+  .application-example__description {
+    font-size: $font-size-secondary;
+    line-height: 24px;
+
+    margin-bottom: 56px;
+  }
+
+  .application-example__presentation {
+    // временно
+    min-height: 462px;
+
+    padding: 0 30px;
+
+    background-color: $palette-tertiary;
+  }
+
+  .application-example__statistic {
+    // временно
+    min-height: 462px;
+
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .application-example {
+    padding-top: 0;
+  }
+
+  .application-example__title {
+    background-color: $palette-primary;
+
+    padding: 90px 0 66px;
+    margin-bottom: 0;
+  }
+
+  .application-example__desc {
+    background-color: $palette-tertiary;
+  }
+
+  .application-example__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 100%;
+  }
+
+  .application-example__statistic {
+    padding: 75px 0;
+
+    width: 570px;
+  }
+
+  .application-example__presentation {
+    padding: 75px 0;
+
+    width: 730px;
+  }
+
+  .application-example__description {
+    width: 430px;
+
+    margin-bottom: 71px;
+  }
+
+  .application-example__table {
+    margin-bottom: 59px;
+  }
+}

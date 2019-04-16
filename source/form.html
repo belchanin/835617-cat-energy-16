@@ -7,49 +7,51 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="container">
-      <header class="page-header">
-        <a class="logo page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="#" alt="Логотип магазина Кэт энерджи" width="" height="">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <main class="page-main">
-        <section class="program">
-          <h1 class="program__title">Подбор программы</h1>
-          <p class="program__tagline">Заполните анкету и мы подберем программу питания для вашего кота</p>
-          <form class="program__form" action="https://echo.htmlacademy.ru" method="POST">
-            <p class="program__wrap">
-              <label class="program__label" for="name-of-cat">
-                Имя:*
-                <input class="program__input" type="text" name="name-of-cat" value="Барсик">
-              </label>
-            </p>
-            <p class="program__wrap">
-              <label class="program__label">
-                Вес (кг):*
-                <input class="program__input" type="text" name="weight-of-cat" value="7">
-              </label>
-            </p>
-            <p class="program__wrap">
-              <label class="program__label">
-                Возраст (лет):
-                <input class="program__input" type="text" name="age-of-cat" value="7">
-              </label>
-            </p>
+    <header class="page-header container">
+      <a class="logo page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="#" alt="Логотип магазина Кэт энерджи" width="" height="">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <section class="program container">
+        <h1 class="program__title">Подбор программы</h1>
+        <p class="program__tagline">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <form class="program__form" action="https://echo.htmlacademy.ru" method="POST">
+          <fieldset class="program__fieldset">
+            <div class="program__wrapper">
+              <p class="program__wrap">
+                <label class="program__label" for="name-of-cat">
+                  Имя:*
+                  <input class="program__input" type="text" name="name-of-cat" value="Барсик">
+                </label>
+              </p>
+              <p class="program__wrap">
+                <label class="program__label">
+                  Вес (кг):*
+                  <input class="program__input" type="text" name="weight-of-cat" value="7">
+                </label>
+              </p>
+              <p class="program__wrap">
+                <label class="program__label">
+                  Возраст (лет):
+                  <input class="program__input" type="text" name="age-of-cat" value="7">
+                </label>
+              </p>
+            </div>
             <ul class="program__radio-list">
               <li class="program__radio-item">
                 <label class="program__label">
@@ -70,8 +72,10 @@
                 </label>
               </li>
             </ul>
-            <fieldset class="program__fieldset">
-              <legend class="program__legend">Контактные данные (владельца кота)</legend>
+          </fieldset>
+          <fieldset class="program__fieldset">
+            <legend class="program__legend">Контактные данные (владельца кота)</legend>
+            <div class="program__wrapper">
               <p class="program__wrap">
                 <label class="program__label">
                   E-mail:*
@@ -84,54 +88,56 @@
                   <input class="program__input" type="tel" name="phone-number" value="8 (960) 900-60-90">
                 </label>
               </p>
-            </fieldset>
-            <fieldset class="program__fieldset">
-              <legend class="program__legend">Комментарий</legend>
-              <textarea class="program__textarea" name="comment">Расскажите обо всех повадках кота</textarea>
-            </fieldset>
-            <fieldset class="program__fieldset">
-              <legend class="program__legend">Дополнительно</legend>
-              <ul class="program__checkbox-list">
-                <li class="program__checkbox-item">
-                  <label class="program__label">
-                    <input class="program__input" type="checkbox" name="sweetener" checked>
-                    Сахарозаменитель
-                  </label>
-                </li>
-                <li class="program__checkbox-item">
-                  <label class="program__label">
-                    <input class="program__input" type="checkbox" name="water">
-                    Питьевая вода
-                  </label>
-                </li>
-                <li class="program__checkbox-item">
-                  <label class="program__label">
-                    <input class="program__input" type="checkbox" name="milk">
-                    Молоко
-                  </label>
-                </li>
-                <li class="program__checkbox-item">
-                  <label class="program__label">
-                    <input class="program__input" type="checkbox" name="vitamins">
-                    Витамины
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <button class="button program__button">Отправить заявку</button>
-            <p class="program__extra">* — Обязательные поля</p>
-          </form>
-        </section>
-        <section class="contacts">
-          <h2 class="visually-hidden">Как нас найти:</h2>
-          <div class="contacts__wrap">
-            <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
-            <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-          </div>
-          <img class="contacts__map" src="#" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-        </section>
-      </main>
-      <footer class="page-footer">
+            </div>
+          </fieldset>
+          <fieldset class="program__fieldset">
+            <legend class="program__legend">Комментарий</legend>
+            <textarea class="program__textarea" name="comment">Расскажите обо всех повадках кота</textarea>
+          </fieldset>
+          <fieldset class="program__fieldset">
+            <legend class="program__legend">Дополнительно</legend>
+            <ul class="program__checkbox-list">
+              <li class="program__checkbox-item">
+                <label class="program__label">
+                  <input class="program__input" type="checkbox" name="sweetener" checked>
+                  Сахарозаменитель
+                </label>
+              </li>
+              <li class="program__checkbox-item">
+                <label class="program__label">
+                  <input class="program__input" type="checkbox" name="water">
+                  Питьевая вода
+                </label>
+              </li>
+              <li class="program__checkbox-item">
+                <label class="program__label">
+                  <input class="program__input" type="checkbox" name="milk">
+                  Молоко
+                </label>
+              </li>
+              <li class="program__checkbox-item">
+                <label class="program__label">
+                  <input class="program__input" type="checkbox" name="vitamins">
+                  Витамины
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button program__button">Отправить заявку</button>
+          <p class="program__extra">* — Обязательные поля</p>
+        </form>
+      </section>
+      <section class="contacts container contacts--white">
+        <h2 class="visually-hidden">Как нас найти:</h2>
+        <div class="contacts__wrap">
+          <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <img class="contacts__map" src="#" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper container">
         <img class="page-footer__logo" src="#" alt="Логотип Cat Energy">
         <ul class="page-footer__list social-list">
           <li class="social-list__item"><a class="social-list__link social-list__link--vk" href="#">Мы в Вконтакте</a></li>
@@ -144,7 +150,7 @@
             <img class="copyright__logo" src="#" alt="Логотип HTML Academy">
           </a>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>
