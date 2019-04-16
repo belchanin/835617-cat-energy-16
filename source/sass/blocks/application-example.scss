@@ -106,14 +106,16 @@
     margin-bottom: 0;
   }
 
+  .application-example__desc {
+    background-color: $palette-tertiary;
+  }
+
   .application-example__wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 
     width: 100%;
-
-    background-color: $palette-tertiary;
   }
 
   .application-example__statistic {
