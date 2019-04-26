@@ -1,3 +1,12 @@
+.copyright {
+  padding-top: 19px;
+
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+}
+
 .copyright__link {
   font-family: $font-family-secondary;
   font-weight: 400;
@@ -9,7 +18,14 @@
 
   color: $secondary-color;
 
+  margin-right: auto;
+
   &:active {
     color: $secondary-color-active;
   }
+}
+
+.copyright__logo {
+  width: 27px;
+  height: 34px;
 }

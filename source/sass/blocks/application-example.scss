@@ -1,7 +1,7 @@
 .application-example {
   background-color: $palette-tertiary;
 
-  padding: 33px 20px 38px;
+  padding: 16px 21px 38px 20px;
 }
 
 .application-example__title {
@@ -11,7 +11,7 @@
   font-weight: 400;
   line-height: $line-height-headline;
 
-  margin-bottom: 33px;
+  margin-bottom: 23px;
 }
 
 .application-example__description {
@@ -21,11 +21,11 @@
 
   color: $secondary-color;
 
-  margin-bottom: 27px;
+  margin-bottom: 36px;
 }
 
 .application-example__table {
-  margin-bottom: 25px;
+  margin-bottom: 33px;
 }
 
 .application-example__table-header {
@@ -44,6 +44,8 @@
 }
 
 .application-example__text {
+  @include reset;
+
   line-height: $line-height-secondary;
   text-transform: $text-transform-base;
 
@@ -53,7 +55,7 @@
 .application-example__statistic,
 .application-example__presentation {
   // временно
-  min-height: 320px;
+  min-height: 260px;
 }
 
 @media (min-width: $tablet-width) {

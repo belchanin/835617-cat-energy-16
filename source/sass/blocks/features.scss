@@ -1,5 +1,5 @@
 .features {
-  padding: 0 20px 32px;
+  padding: 0 20px 17px;
   margin: 0 auto;
 }
 
@@ -10,11 +10,26 @@
 .features__item {
   background-color: $palette-tertiary;
 
-  padding: 39px 36px 22px 21px;
+  padding: 30px 34px 22px 20px;
   margin-bottom: 20px;
+
+  position: relative;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: 57px;
+    left: 7.5%;
+
+    width: 85%;
+    height: 1px;
+
+    background-color: $palette-decoration;
   }
 }
 
@@ -29,8 +44,59 @@
 
   color: $primary-color;
 
-  margin-bottom: 36px;
-  padding-left: 70px;
+  margin-bottom: 29px;
+  padding-left: 71px;
+
+  position: relative;
+
+
+  &--slim::before,
+  &--fast::before {
+    content: "";
+
+    position: absolute;
+
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    z-index: 2;
+  }
+
+  &--slim::before {
+    top: -8px;
+    left: 2px;
+
+    width: 50px;
+    height: 50px;
+
+    background-image: url("../img/icon-cat-slim.svg");
+  }
+
+  &--fast::before {
+    top: 5px;
+    left: -7px;
+
+    width: 67px;
+    height: 28px;
+
+    background-image: url("../img/icon-cat-pro.svg");
+  }
+
+  &--slim::after,
+  &--fast::after {
+    content: "";
+
+    position: absolute;
+    top: -5px;
+    left: 2px;
+
+    width: 50px;
+    height: 50px;
+
+    background-color: $palette-secondary;
+
+    border-radius: 50%;
+  }
 }
 
 .features__text {
@@ -42,7 +108,7 @@
 
   color: $secondary-color;
 
-  margin-bottom: 44px;
+  margin-bottom: 42px;
 }
 
 .features__link {
@@ -53,8 +119,23 @@
 
   color: $primary-color;
 
+  position: relative;
+
   &:active {
     color: $tertiary-color-active;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 3px;
+    right: 105px;
+
+    width: 25px;
+    height: 12px;
+
+    background-image: url("../img/icon-right-arrow-long.svg");
   }
 }
 

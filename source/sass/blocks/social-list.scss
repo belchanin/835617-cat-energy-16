@@ -3,5 +3,64 @@
 
   background-color: $palette-tertiary;
 
-  padding: 24px 82px;
+  padding: 23px 73px 22px;
+
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+
+  position: relative;
+
+  &::after,
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: $palette-decoration;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+}
+
+.social-list__item {
+  position: relative;
+}
+
+.social-list__link {
+  &--vk {
+    width: 22px;
+    height: 12px;
+
+    margin-right: 36px;
+
+    background-image: url("../img/icon-vk-mobile.svg");
+  }
+
+  &--instagram {
+    width: 17px;
+    height: 17px;
+
+    margin-right: 41px;
+
+    background-image: url("../img/icon-insta-mobile.svg");
+  }
+
+  &--fb {
+    width: 10px;
+    height: 19px;
+
+    background-image: url("../img/icon-fb-mobile.svg");
+  }
 }
