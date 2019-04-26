@@ -48,3 +48,11 @@
   width: 41px;
   height: 41px;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 177px;
+
+    padding-top: 0;
+  }
+}

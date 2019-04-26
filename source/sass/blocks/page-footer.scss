@@ -22,7 +22,7 @@
 }
 
 .page-footer__logo {
-  margin-bottom: 31px;
+  margin-bottom: 28px;
 
   width: 128px;
   height: 24px;
@@ -30,16 +30,26 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    padding: 58px 30px;
+    padding: 53px 23px 45px 31px;
   }
 
   .page-footer__wrapper {
+    display: flex;
     flex-direction: row;
-    justify-content: space-between;
+  }
+
+  .page-footer__logo-link {
+    width: 128px;
+    height: 24px;
+
+    margin-right: 155px;
   }
 
   .page-footer__logo {
     margin-bottom: 0;
+
+    width: 128px;
+    height: 24px;
   }
 }
 

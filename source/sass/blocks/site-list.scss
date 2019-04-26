@@ -36,6 +36,25 @@
     justify-content: space-between;
   }
 
+  .site-list__item {
+    border-bottom: none;
+
+    position: relative;
+
+    &--active::after {
+      content: "";
+
+      position: absolute;
+      bottom: 15px;
+      left: 1%;
+
+      width: 98%;
+      height: 2px;
+
+      background-color: $palette-secondary;
+    }
+  }
+
   .site-list__link {
     font-size: 18px;
     font-weight: 400;

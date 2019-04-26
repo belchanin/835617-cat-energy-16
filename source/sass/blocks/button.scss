@@ -55,6 +55,13 @@
 
     &--small {
       width: 245px;
+
+      font-size: 20px;
+      line-height: $line-height-secondary;
+
+      padding-top: 15px;
+      padding-bottom: 17px;
+      margin-left: 1px;
     }
   }
 }
