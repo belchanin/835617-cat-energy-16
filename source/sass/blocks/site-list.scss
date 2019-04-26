@@ -17,6 +17,15 @@
   font-weight: 600;
   line-height: 20px;
   text-transform: $text-transform-base;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

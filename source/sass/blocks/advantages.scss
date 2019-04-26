@@ -44,22 +44,22 @@
   }
 
   &--leaf::before {
-    background-image: url("../../img/advantage-leaf@1x.png");
+    background-image: url("../img/advantage-leaf@1x.png");
     background-position: 50% 50%;
   }
 
   &--powder::before {
-    background-image: url("../../img/advantage-powder@1x.png");
+    background-image: url("../img/advantage-powder@1x.png");
     background-position: 50% 40%;
   }
 
   &--dining::before {
-    background-image: url("../../img/advantage-dining@1x.png");
+    background-image: url("../img/advantage-dining@1x.png");
     background-position: 40% 50%;
   }
 
   &--clock::before {
-    background-image: url("../../img/advantage-clock@1x.png");
+    background-image: url("../img/advantage-clock@1x.png");
     background-position: 50% 50%;
   }
 }

@@ -121,6 +121,7 @@
 
   position: relative;
 
+  &:focus,
   &:active {
     color: $tertiary-color-active;
   }
@@ -136,6 +137,19 @@
     height: 12px;
 
     background-image: url("../img/icon-right-arrow-long.svg");
+  }
+
+  &:hover::after {
+    right: 94px;
+
+    width: 34px;
+
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+  }
+
+  &:focus::after,
+  &:active::after {
+    opacity: 0.3;
   }
 }
 

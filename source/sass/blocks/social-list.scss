@@ -3,7 +3,7 @@
 
   background-color: $palette-tertiary;
 
-  padding: 23px 73px 22px;
+  padding: 23px 80px 22px;
 
   display: flex;
   align-items: center;
@@ -30,7 +30,7 @@
   }
 
   &::after {
-    bottom: 0;
+    bottom: 3px;
   }
 }
 
@@ -39,28 +39,36 @@
 }
 
 .social-list__link {
-  &--vk {
+  &--vk svg {
     width: 22px;
     height: 12px;
 
     margin-right: 36px;
-
-    background-image: url("../img/icon-vk-mobile.svg");
   }
 
-  &--instagram {
-    width: 17px;
-    height: 17px;
+  &--instagram svg {
+    width: 16px;
+    height: 16px;
 
     margin-right: 41px;
-
-    background-image: url("../img/icon-insta-mobile.svg");
   }
 
-  &--fb {
+  &--fb svg {
     width: 10px;
     height: 19px;
+  }
 
-    background-image: url("../img/icon-fb-mobile.svg");
+  &:hover svg  {
+    path {
+      fill: $palette-secondary;
+    }
+  }
+
+  &:focus svg,
+  &:active svg {
+    path {
+      fill: $palette-secondary;
+      opacity: 0.3;
+    }
   }
 }
