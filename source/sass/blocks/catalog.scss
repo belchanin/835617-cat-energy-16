@@ -125,7 +125,7 @@
     opacity: 0.2;
 
     background-image: url("../img/icon-plus-mobile.svg");
-    background-image: no-repeat;
+    background-repeat: no-repeat;
   }
 }
 
@@ -326,7 +326,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog {
-    padding: 0;
+    padding: 0 40px;
   }
 
   .catalog__list {
@@ -335,5 +335,39 @@
 
   .catalog__item {
     width: 245px;
+
+    margin-bottom: 73px;
+
+    &::after {
+      left: -39px;
+    }
+
+    &--chicken-small::after {
+      top: -45px;
+    }
+
+    &--chicken-big::after {
+      top: -81px;
+    }
+
+    &--fish-small::after {
+      top: -46px;
+    }
+
+    &--fish-big::after {
+      top: -81px;
+    }
+
+    &--buckwheat-small::after {
+      top: -47px;
+    }
+
+    &--buckwheat-big::after {
+      top: -83px;
+    }
+
+    &--rice-small::after {
+      top: -47px;
+    }
   }
 }
