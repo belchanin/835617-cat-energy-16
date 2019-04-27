@@ -69,9 +69,15 @@
     width: 480px;
   }
 
+  .site-list__item {
+    &--active::after {
+      background-color: $quaternary-color;
+    }
+  }
+
   .site-list__link {
     font-size: 20px;
 
-    color: $primary-color;
+    color: $quaternary-color;
   }
 }

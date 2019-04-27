@@ -69,5 +69,9 @@
 @media (min-width: $desktop-width) {
   .button {
     width: 169px;
+
+    &--small {
+      margin-left: -1px;
+    }
   }
 }
