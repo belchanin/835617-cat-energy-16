@@ -1,6 +1,5 @@
 .copyright {
-  padding-top: 16px;
-  padding-left: 6px;
+  padding: 16px 4% 16px 6%;
 
   display: flex;
   align-items: center;
@@ -53,6 +52,7 @@
   .copyright {
     width: 177px;
 
-    padding-top: 0;
+    padding: 0;
+    padding-left: 8px;
   }
 }

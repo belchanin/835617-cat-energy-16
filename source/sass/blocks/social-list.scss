@@ -3,7 +3,7 @@
 
   background-color: $palette-tertiary;
 
-  padding: 23px 80px 22px;
+  padding: 23px 0 22px 29%;
 
   display: flex;
   align-items: center;
@@ -17,9 +17,9 @@
     content: "";
 
     position: absolute;
-    left: 0;
+    left: 5%;
 
-    width: 100%;
+    width: 90%;
     height: 1px;
 
     background-color: $palette-decoration;
@@ -39,25 +39,31 @@
 }
 
 .social-list__link {
+  &--vk {
+    margin-right: 36px;
+  }
+
   &--vk svg {
     width: 22px;
     height: 12px;
+  }
 
-    margin-right: 36px;
+  &--instagram {
+    margin-right: 41px;
   }
 
   &--instagram svg {
     width: 16px;
     height: 16px;
+  }
 
-    margin-right: 41px;
+  &--insta-big {
+    margin-right: 36px;
   }
 
   &--insta-big svg {
     width: 23px;
     height: 23px;
-
-    margin-right: 36px;
   }
 
   &--fb svg {
@@ -94,18 +100,22 @@
   }
 
   .social-list__link {
+    &--vk {
+      margin-right: 28px;
+    }
+
     &--vk svg {
       width: 30px;
       height: 16px;
+    }
 
-      margin-right: 28px;
+    &--instagram {
+      margin-right: 29px;
     }
 
     &--instagram svg {
       width: 23px;
       height: 23px;
-
-      margin-right: 29px;
     }
 
     &--fb svg {

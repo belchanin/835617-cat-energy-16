@@ -26,4 +26,23 @@
   .page-main__head {
     padding: 17px 0 0 40px;
   }
+
+  .page-main {
+    position: relative;
+
+    &--green-cat::after {
+      content: "";
+
+      position: absolute;
+      top: -171px;
+      right: 1px;
+
+      width: 720px;
+      height: 696px;
+
+      background-color: $palette-secondary;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+    }
+  }
 }
