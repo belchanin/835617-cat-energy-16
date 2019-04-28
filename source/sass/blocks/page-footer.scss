@@ -36,6 +36,8 @@
   .page-footer__wrapper {
     display: flex;
     flex-direction: row;
+
+    padding: 0 26px;
   }
 
   .page-footer__logo-link {
@@ -56,6 +58,10 @@
 @media (min-width: $desktop-width) {
   .page-footer {
     padding: 53px 103px 55px 110px;
+  }
+
+  .page-footer__wrapper {
+    padding: 9px 38px;
   }
 
   .page-footer__logo-link {
