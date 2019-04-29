@@ -8,7 +8,7 @@
   border: none;
 
   padding-top: 11px;
-  padding-bottom: 11px;
+  padding-bottom: 9px;
 
   text-align: center;
 
@@ -31,6 +31,8 @@
     font-size: $font-size-primary;
     font-weight: 400;
     line-height: $line-height-primary;
+
+    padding-bottom: 11px;
   }
 
   &--grey {
@@ -55,6 +57,13 @@
 
     &--small {
       width: 245px;
+
+      font-size: 20px;
+      line-height: $line-height-secondary;
+
+      padding-top: 15px;
+      padding-bottom: 17px;
+      margin-left: 1px;
     }
   }
 }
@@ -62,5 +71,9 @@
 @media (min-width: $desktop-width) {
   .button {
     width: 169px;
+
+    &--small {
+      margin-left: -1px;
+    }
   }
 }

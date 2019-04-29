@@ -1,5 +1,5 @@
 .catalog {
-  padding: 25px 20px 0;
+  padding-top: 4px;
   margin: 0 auto;
 }
 
@@ -8,14 +8,62 @@
 }
 
 .catalog__item {
-  margin-bottom: 24px;
+  margin-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
 
-  &:last-child {
-    padding-top: 83px;
+  position: relative;
+
+  &:first-child::before {
+    content: "";
+
+    position: absolute;
+    top: -1px;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: $palette-border;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: $palette-border;
+  }
+
+  &--all {
+    padding-top: 79px;
     padding-bottom: 25px;
 
     margin: 0;
+
+    text-align: center;
   }
+}
+
+.catalog__wrap {
+  display: flex;
+}
+
+.catalog__item-image {
+  width: 140px;
+  height: 144px;
+}
+
+.catalog__item-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 21px;
 }
 
 .catalog__title {
@@ -26,7 +74,15 @@
   line-height: $line-height-secondary;
   text-transform: $text-transform-base;
 
-  margin-bottom: 18px;
+  margin-bottom: 11px;
+
+  width: 74px;
+}
+
+.catalog__table {
+  width: 141px;
+
+  border-collapse: collapse;
 }
 
 .catalog__table-row {
@@ -41,6 +97,10 @@
   font-weight: 400;
 }
 
+.catalog__table-data {
+  text-align: right;
+}
+
 .catalog__text {
   @include reset;
 
@@ -48,7 +108,25 @@
   line-height: $line-height-secondary;
   text-transform: $text-transform-base;
 
-  margin-bottom: 11px;
+  margin-bottom: 8px;
+
+  position: relative;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -53px;
+    left: 125px;
+
+    width: 31px;
+    height: 31px;
+
+    opacity: 0.2;
+
+    background-image: url("../img/icon-plus-mobile.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .catalog__desc {
@@ -60,7 +138,7 @@
 
   color: $secondary-color;
 
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -78,7 +156,7 @@
 
   .catalog__item {
     width: 324px;
-    padding: 165px 37px 40px;
+    padding: 142px 35px 40px 37px;
     margin-top: 70px;
     margin-bottom: 70px;
 
@@ -87,12 +165,168 @@
     &:last-child {
       background-color: $palette-primary;
     }
+
+    &:first-child::before {
+      display: none;
+    }
+
+    &::after {
+      left: 0;
+
+      background-color: transparent;
+      background-repeat: no-repeat;
+    }
+
+    &--chicken-small::after {
+      top: -46px;
+
+      height: 172px;
+
+      background-image: url("../img/chicken-small-tablet@1x.png");
+    }
+
+    &--chicken-big::after {
+      top: -82px;
+
+      height: 208px;
+
+      background-image: url("../img/chicken-big-tablet@1x.png");
+    }
+
+    &--fish-small::after {
+      top: -48px;
+
+      height: 172px;
+
+      background-image: url("../img/fish-small-tablet@1x.png");
+    }
+
+    &--fish-big::after {
+      top: -82px;
+
+      height: 208px;
+
+      background-image: url("../img/fish-big-tablet@1x.png");
+    }
+
+    &--buckwheat-small::after {
+      top: -46px;
+
+      height: 172px;
+
+      background-image: url("../img/buckwheat-small-tablet@1x.png");
+    }
+
+    &--buckwheat-big::after {
+      top: -82px;
+
+      height: 208px;
+
+      background-image: url("../img/buckwheat-big-tablet@1x.png");
+    }
+
+    &--rice-small::after {
+      top: -48px;
+
+      height: 172px;
+
+      background-image: url("../img/rice-small-tablet@1x.png");
+    }
+
+    &--all {
+      border: 1px solid $palette-outline;
+
+      padding-top: 163px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      text-align: center;
+    }
+  }
+
+  .catalog__item-image {
+    display: none;
+  }
+
+  .catalog__title {
+    width: 130px;
+
+    font-size: 20px;
+
+    margin-bottom: 25px;
+  }
+
+  .catalog__wrap {
+    display: block;
+  }
+
+  .catalog__item-wrapper {
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+  }
+
+  .catalog__table-row {
+    font-size: $font-size-secondary;
+  }
+
+  .catalog__table {
+    width: 100%;
+    border-collapse: separate;
+
+    margin-bottom: 28px;
+  }
+
+  .catalog__table-header {
+    text-align: left;
+
+    padding-bottom: 12px;
+  }
+
+  .catalog__table-data {
+    padding-bottom: 12px;
+  }
+
+  .catalog__text {
+    font-size: 20px;
+
+    width: 134px;
+
+    margin-bottom: 27px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -109px;
+      left: 37px;
+
+      width: 61px;
+      height: 61px;
+
+      background-image: url("../img/icon-plus.svg");
+      background-repeat: no-repeat;
+
+      opacity: 0.2;
+    }
+  }
+
+  .catalog__desc {
+    font-size: $font-size-secondary;
+    line-height: $line-height-primary;
+
+    width: 167px;
+
+    margin-bottom: 85px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog {
-    padding: 0;
+    padding: 0 40px;
   }
 
   .catalog__list {
@@ -101,5 +335,39 @@
 
   .catalog__item {
     width: 245px;
+
+    margin-bottom: 73px;
+
+    &::after {
+      left: -39px;
+    }
+
+    &--chicken-small::after {
+      top: -45px;
+    }
+
+    &--chicken-big::after {
+      top: -81px;
+    }
+
+    &--fish-small::after {
+      top: -46px;
+    }
+
+    &--fish-big::after {
+      top: -81px;
+    }
+
+    &--buckwheat-small::after {
+      top: -47px;
+    }
+
+    &--buckwheat-big::after {
+      top: -83px;
+    }
+
+    &--rice-small::after {
+      top: -47px;
+    }
   }
 }

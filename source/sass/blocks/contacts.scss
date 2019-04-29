@@ -7,7 +7,7 @@
 }
 
 .contacts__wrap {
-  padding: 31px 25px 28px 19px;
+  padding: 31px 25px 27px 19px;
 
   display: flex;
   justify-content: space-between;
@@ -30,6 +30,10 @@
   color: $secondary-color;
 }
 
+.contacts__map {
+  min-height: 361px;
+}
+
 @media (min-width: $tablet-width) {
   .contacts__wrap {
     padding: 66px 72px 59px;
@@ -47,6 +51,10 @@
 
     width: 153px;
   }
+
+  .contacts__map {
+    min-height: 339px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -56,5 +64,9 @@
     padding: 66px 90px 59px 76px;
 
     background-color: $palette-primary;
+  }
+
+  .contacts__map {
+    min-height: 195px;
   }
 }

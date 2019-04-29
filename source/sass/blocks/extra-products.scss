@@ -1,5 +1,5 @@
 .extra-products {
-  padding: 31px 20px 35px;
+  padding: 29px 20px 35px;
 }
 
 .extra-products__title {
@@ -9,7 +9,7 @@
   line-height: 24px;
   font-weight: 400;
 
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 }
 
 .extra-products__list {
@@ -33,7 +33,7 @@
 
   color: $tertiary-color;
 
-  margin-bottom: 15px;
+  margin-bottom: 11px;
 }
 
 .extra-products__table {
@@ -42,7 +42,7 @@
 
   color: $secondary-color;
 
-  margin-bottom: 14px;
+  margin-bottom: 11px;
 }
 
 .extra-products__table-header {
@@ -52,10 +52,10 @@
 .extra-products__gift {
   @include reset;
 
-  padding: 190px 60px 43px;
+  padding: 184px 60px 43px;
 
   background-color: $palette-secondary;
-  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
 
   font-family: $font-family-secondary;
