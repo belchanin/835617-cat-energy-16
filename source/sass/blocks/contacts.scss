@@ -7,10 +7,9 @@
 }
 
 .contacts__wrap {
-  padding: 31px 25px 27px 19px;
+  padding: 28px 25px 27px 19px;
 
   display: flex;
-  justify-content: space-between;
 }
 
 .contacts__text {
@@ -19,6 +18,8 @@
   font-size: $font-size-secondary;
   line-height: $line-height-secondary;
   text-transform: $text-transform-base;
+
+  margin-right: 16px;
 }
 
 .contacts__address {

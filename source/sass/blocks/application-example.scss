@@ -1,7 +1,7 @@
 .application-example {
   background-color: $palette-tertiary;
 
-  padding: 16px 21px 38px 20px;
+  padding: 16px 0 33px;
 }
 
 .application-example__title {
@@ -12,6 +12,7 @@
   line-height: $line-height-headline;
 
   margin-bottom: 23px;
+  padding-left: 20px;
 }
 
 .application-example__description {
@@ -25,7 +26,12 @@
 }
 
 .application-example__table {
-  margin-bottom: 33px;
+  margin-bottom: 16px;
+
+  tbody {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .application-example__table-header {
@@ -36,11 +42,35 @@
   text-transform: lowercase;
 
   color: $secondary-color;
+
+  display: inline-block;
+  vertical-align: top;
+
+  margin-right: 96px;
+  margin-left: 31px;
+
+  &:last-child {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 .application-example__table-data {
   font-size: 24px;
   line-height: 24px;
+  text-transform: $text-transform-base;
+
+  display: inline-block;
+  vertical-align: top;
+
+  margin-right: 92px;
+  margin-left: 39px;
+  margin-bottom: 7px;
+
+  &:last-child {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 .application-example__text {
@@ -49,13 +79,32 @@
   line-height: $line-height-secondary;
   text-transform: $text-transform-base;
 
-  margin-bottom: 44px;
+  margin-bottom: 36px;
+
+  text-align: center;
 }
 
-.application-example__statistic,
+.application-example__cat-image {
+  width: 320px;
+  height: 238px;
+
+  margin-bottom: 27px;
+}
+
+.application-example__before,
+.application-example__after {
+  text-transform: $text-transform-base;
+  font-size: $font-size-secondary;
+  line-height: $line-height-secondary;
+}
+
 .application-example__presentation {
-  // временно
-  min-height: 260px;
+  text-align: center;
+}
+
+.application-example__statistic {
+  padding-right: 21px;
+  padding-left: 20px;
 }
 
 @media (min-width: $tablet-width) {
