@@ -13,6 +13,11 @@
 
   display: flex;
   justify-content: space-between;
+
+  position: relative;
+  z-index: 2;
+
+  background-color: $palette-primary;
 }
 
 .contacts__text {
