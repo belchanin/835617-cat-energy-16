@@ -96,7 +96,7 @@
             <legend class="program__legend program__legend--comment">Комментарий</legend>
             <textarea class="program__textarea" name="comment">Расскажите обо всех повадках кота</textarea>
           </fieldset>
-          <fieldset class="program__fieldset">
+          <fieldset class="program__fieldset program__fieldset--more">
             <legend class="program__legend program__legend--more">Дополнительно</legend>
             <ul class="program__checkbox-list">
               <li class="program__checkbox-item">
@@ -117,8 +117,10 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button program__button">Отправить заявку</button>
-          <p class="program__extra">* — Обязательные поля</p>
+          <div class="program__extra-wrap">
+            <button class="button button--small program__button">Отправить заявку</button>
+            <p class="program__extra">* — Обязательные поля</p>
+          </div>
         </form>
       </section>
       <section class="contacts container">
