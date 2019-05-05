@@ -33,58 +33,60 @@
         <h1 class="program__title">Подбор программы</h1>
         <p class="program__tagline">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <form class="program__form" action="https://echo.htmlacademy.ru" method="POST">
-          <fieldset class="program__fieldset">
-            <div class="program__wrapper">
-              <p class="program__wrap">
-                <label class="program__label" for="name-of-cat">
-                  Имя:*
-                </label>
-                <input class="program__input" type="text" name="name-of-cat" id="name-of-cat" value="Барсик">
-              </p>
-              <p class="program__wrap">
-                <label class="program__label" for="weight-of-cat">
-                  Вес (кг):*
-                </label>
-                <input class="program__input" type="text" name="weight-of-cat" id="weight-of-cat" value="7">
-              </p>
-              <p class="program__wrap">
-                <label class="program__label" for="age-of-cat">
-                  Возраст (лет):
-                </label>
-                <input class="program__input" type="text" name="age-of-cat" id="age-of-cat" value="7">
-              </p>
+          <fieldset class="program__fieldset program__fieldset--wrapper">
+            <div class="program__form-wrapper">
+              <div class="program__wrapper">
+                <p class="program__wrap">
+                  <label class="program__label" for="name-of-cat">
+                    Имя:*
+                  </label>
+                  <input class="program__input" type="text" name="name-of-cat" id="name-of-cat" value="Барсик">
+                </p>
+                <p class="program__wrap">
+                  <label class="program__label" for="weight-of-cat">
+                    Вес (кг):*
+                  </label>
+                  <input class="program__input" type="text" name="weight-of-cat" id="weight-of-cat" value="7">
+                </p>
+                <p class="program__wrap">
+                  <label class="program__label" for="age-of-cat">
+                    Возраст (лет):
+                  </label>
+                  <input class="program__input" type="text" name="age-of-cat" id="age-of-cat" value="7">
+                </p>
+              </div>
+              <ul class="program__radio-list">
+                <li class="program__radio-item">
+                  <input class="program__input-radio visually-hidden" type="radio" name="program-selection" id="losing-weight" value="losing-weight" checked>
+                  <label class="program__label" for="losing-weight">
+                    Похудение
+                  </label>
+                </li>
+                <li class="program__radio-item">
+                  <input class="program__input-radio visually-hidden" type="radio" name="program-selection" id="weight-gain" value="weight-gain">
+                  <label class="program__label" for="weight-gain">
+                    Набор массы
+                  </label>
+                </li>
+                <li class="program__radio-item">
+                  <input class="program__input-radio visually-hidden" type="radio" id="need-advice" name="program-selection" value="need-advice">
+                  <label class="program__label" for="need-advice">
+                    Не знаю (нужен ваш совет)
+                  </label>
+                </li>
+              </ul>
             </div>
-            <ul class="program__radio-list">
-              <li class="program__radio-item">
-                <input class="program__input-radio visually-hidden" type="radio" name="program-selection" id="losing-weight" value="losing-weight" checked>
-                <label class="program__label" for="losing-weight">
-                  Похудение
-                </label>
-              </li>
-              <li class="program__radio-item">
-                <input class="program__input-radio visually-hidden" type="radio" name="program-selection" id="weight-gain" value="weight-gain">
-                <label class="program__label" for="weight-gain">
-                  Набор массы
-                </label>
-              </li>
-              <li class="program__radio-item">
-                <input class="program__input-radio visually-hidden" type="radio" id="need-advice" name="program-selection" value="need-advice">
-                <label class="program__label" for="need-advice">
-                  Не знаю (нужен ваш совет)
-                </label>
-              </li>
-            </ul>
           </fieldset>
           <fieldset class="program__fieldset program__fieldset--contacts">
             <legend class="program__legend program__legend--contacts">Контактные данные (владельца кота)</legend>
-            <div class="program__wrapper">
-              <p class="program__wrap">
+            <div class="program__wrapper program__wrapper--desktop">
+              <p class="program__wrap program__wrap--contacts">
                 <label class="program__label program__label--email" for="email">
                   E-mail:*
                 </label>
                 <input class="program__input" type="email" name="email" id="email" value="kuklachev@gmail.com">
               </p>
-              <p class="program__wrap">
+              <p class="program__wrap program__wrap--contacts">
                 <label class="program__label program__label--phone" for="phone-number">
                   Телефон:*
                 </label>
