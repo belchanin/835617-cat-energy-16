@@ -30,6 +30,7 @@
 
   tbody {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 
     width: 280px;
@@ -94,6 +95,12 @@
   height: 238px;
 
   margin-bottom: 27px;
+}
+
+.application-example__comparison-item {
+  &--after {
+    display: none;
+  }
 }
 
 .application-example__before,
@@ -181,23 +188,105 @@
     font-size: $font-size-secondary;
     line-height: 24px;
 
-    margin-bottom: 56px;
+    margin-bottom: 51px;
+    padding-right: 6px;
+
+    width: 100%;
+  }
+
+  .application-example__table {
+    tbody {
+      width: 366px;
+    }
+  }
+
+  .application-example__table-row {
+    width: 162px;
+
+    padding-bottom: 18px;
+  }
+
+  .application-example__table-data {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .application-example__table-header {
+    font-size: $font-size-primary;
+    line-height: 14px;
+
+    width: auto;
+
+    bottom: -7px;
+    left: auto;
+
+    padding-left: 8px;
+    padding-right: 8px;
+
+    background-color: $palette-primary;
+  }
+
+  .application-example__text {
+    font-size: 20px;
+    line-height: $line-height-secondary;
+
+    width: 174px;
+
+    text-align: right;
+
+    padding-top: 13px;
+
+    span {
+      display: inline-block;
+
+      padding-top: 9px;
+    }
   }
 
   .application-example__presentation {
-    // временно
-    min-height: 462px;
+    position: relative;
 
-    padding: 0 30px;
-
-    background-color: $palette-tertiary;
+    padding-top: 221px;
   }
 
   .application-example__statistic {
-    // временно
-    min-height: 462px;
-
     padding: 0 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .application-example__comparison {
+    display: flex;
+
+    width: 100%;
+  }
+
+  .application-example__comparison-item {
+    width: 50%;
+
+    position: relative;
+
+    &--before {
+      background-color: $palette-tertiary;
+    }
+
+    &--after {
+      background-color: $palette-comparison;
+
+      display: block;
+    }
+  }
+
+  .application-example__comparison-item--before .application-example__cat-image {
+    position: absolute;
+
+    top: -171px;
+    left: 189px;
+
+    width: 690px;
+    height: 517px;
   }
 }
 
