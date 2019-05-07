@@ -39,7 +39,7 @@
     flex-direction: row;
     justify-content: space-between;
 
-    padding: 17px 30px 13px;
+    padding: 17px 30px 13px 24px;
   }
 
   .page-header__logo {
@@ -61,7 +61,7 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    padding: 49px 40px;
+    padding: 47px 40px 49px 33px;
   }
 
   .page-header__logo {
