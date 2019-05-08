@@ -34,7 +34,7 @@
     content: "";
 
     position: absolute;
-    top: -2px;
+    top: -3px;
     left: 0;
 
     width: 60px;
@@ -209,5 +209,10 @@
   .advantages__item {
     width: 245px;
     padding-bottom: 48px;
+
+    &::before {
+      top: -1px;
+      left: 2px;
+    }
   }
 }

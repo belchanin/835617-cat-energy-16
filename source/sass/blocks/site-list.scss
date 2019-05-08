@@ -82,12 +82,19 @@
 
       background-color: $quaternary-color;
     }
+
+    &--active::after {
+      bottom: 11px;
+    }
   }
 
   .site-list__link {
-    &--index {
-      font-size: 20px;
+    font-size: 20px;
+    line-height: 25px;
 
+    color: $primary-color;
+
+    &--index {
       color: $quaternary-color;
     }
   }

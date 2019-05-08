@@ -54,6 +54,10 @@
   display: flex;
 }
 
+.catalog__wrap-picture {
+  width: auto;
+}
+
 .catalog__item-image {
   width: 140px;
   height: 144px;
@@ -158,7 +162,7 @@
     width: 324px;
     padding: 142px 0 40px;
     margin-top: 70px;
-    margin-bottom: 67px;
+    margin-bottom: 68px;
 
     background-color: $palette-tertiary;
 
@@ -235,11 +239,11 @@
   .catalog__table-header {
     text-align: left;
 
-    padding-bottom: 12px;
+    padding-bottom: 15px;
   }
 
   .catalog__table-data {
-    padding-bottom: 12px;
+    padding-bottom: 15px;
   }
 
   .catalog__text {
@@ -305,6 +309,14 @@
   }
 
   .catalog__item-wrapper {
-    padding-top: 32px;
+    padding-top: 36px;
+  }
+
+  .catalog__table-header {
+    padding-bottom: 15px;
+  }
+
+  .catalog__table {
+    margin-bottom: 26px;
   }
 }
