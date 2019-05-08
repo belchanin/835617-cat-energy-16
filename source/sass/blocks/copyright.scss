@@ -28,24 +28,22 @@
 }
 
 .copyright__link-logo {
+  svg {
+    fill: $palette-svg;
+
+    width: 41px;
+    height: 41px;
+  }
+
   &:hover svg {
-    path {
-      fill: $palette-secondary;
-    }
+    fill: $palette-secondary;
   }
 
   &:focus svg,
   &:active svg {
-    path {
-      fill: $palette-secondary;
-      opacity: 0.3;
-    }
+    fill: $palette-secondary;
+    opacity: 0.3;
   }
-}
-
-.copyright__link-logo svg {
-  width: 41px;
-  height: 41px;
 }
 
 @media (min-width: $tablet-width) {
