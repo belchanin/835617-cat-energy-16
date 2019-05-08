@@ -39,6 +39,10 @@
 }
 
 .social-list__link {
+  svg {
+    fill: $palette-svg;
+  }
+
   &--vk {
     margin-right: 36px;
   }
@@ -72,17 +76,13 @@
   }
 
   &:hover svg {
-    path {
-      fill: $palette-secondary;
-    }
+    fill: $palette-secondary;
   }
 
   &:focus svg,
   &:active svg {
-    path {
-      fill: $palette-secondary;
-      opacity: 0.3;
-    }
+    fill: $palette-secondary;
+    opacity: 0.3;
   }
 }
 
