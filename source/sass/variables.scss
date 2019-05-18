@@ -7,6 +7,7 @@ $palette-border: #ededed;
 $palette-outline: #cdcdcd;
 $palette-border-secondary: #cbcbcb;
 $palette-comparison: #eaeaea;
+$palette-svg: #666666;
 
 // Цвет фона для состояний
 $primary-palette-hover: #5eaa2f;
@@ -45,3 +46,5 @@ $text-transform-base: uppercase;
 $tablet-width: 768px;
 $desktop-width: 1300px;
 $mobile-width-only: 767px;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
