@@ -40,109 +40,106 @@
         <h1 class="program__title">Подбор программы</h1>
         <p class="program__tagline">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <form class="program__form" action="https://echo.htmlacademy.ru" method="POST">
-          <fieldset class="program__fieldset">
-            <div class="program__wrapper">
-              <p class="program__wrap">
-                <label class="program__label" for="name-of-cat">
-                  Имя:*
-                  <input class="program__input" type="text" name="name-of-cat" value="Барсик">
-                </label>
-              </p>
-              <p class="program__wrap">
-                <label class="program__label">
-                  Вес (кг):*
-                  <input class="program__input" type="text" name="weight-of-cat" value="7">
-                </label>
-              </p>
-              <p class="program__wrap">
-                <label class="program__label">
-                  Возраст (лет):
-                  <input class="program__input" type="text" name="age-of-cat" value="7">
-                </label>
-              </p>
+          <fieldset class="program__fieldset program__fieldset--wrapper">
+            <div class="program__form-wrapper">
+              <div class="program__wrapper">
+                <p class="program__wrap">
+                  <label class="program__label" for="name-of-cat">
+                    Имя:*
+                  </label>
+                  <input class="program__input" type="text" name="name-of-cat" id="name-of-cat" value="Барсик">
+                </p>
+                <p class="program__wrap">
+                  <label class="program__label" for="weight-of-cat">
+                    Вес (кг):*
+                  </label>
+                  <input class="program__input" type="text" name="weight-of-cat" id="weight-of-cat" value="7">
+                </p>
+                <p class="program__wrap">
+                  <label class="program__label" for="age-of-cat">
+                    Возраст (лет):
+                  </label>
+                  <input class="program__input" type="text" name="age-of-cat" id="age-of-cat" value="7">
+                </p>
+              </div>
+              <ul class="program__radio-list">
+                <li class="program__radio-item">
+                  <input class="program__input-radio visually-hidden" type="radio" name="program-selection" id="losing-weight" value="losing-weight" checked>
+                  <label class="program__label" for="losing-weight">
+                    Похудение
+                  </label>
+                </li>
+                <li class="program__radio-item">
+                  <input class="program__input-radio visually-hidden" type="radio" name="program-selection" id="weight-gain" value="weight-gain">
+                  <label class="program__label" for="weight-gain">
+                    Набор массы
+                  </label>
+                </li>
+                <li class="program__radio-item">
+                  <input class="program__input-radio visually-hidden" type="radio" id="need-advice" name="program-selection" value="need-advice">
+                  <label class="program__label" for="need-advice">
+                    Не знаю (нужен ваш совет)
+                  </label>
+                </li>
+              </ul>
             </div>
-            <ul class="program__radio-list">
-              <li class="program__radio-item">
-                <label class="program__label">
-                  <input class="program__input" type="radio" name="program-selection" value="losing-weight" checked="">
-                  Похудение
-                </label>
-              </li>
-              <li class="program__radio-item">
-                <label class="program__label">
-                  <input class="program__input" type="radio" name="program-selection" value="weight-gain">
-                  Набор массы
-                </label>
-              </li>
-              <li class="program__radio-item">
-                <label class="program__label">
-                  <input class="program__input" type="radio" name="program-selection" value="need-advice">
-                  Не знаю (нужен ваш совет)
-                </label>
-              </li>
-            </ul>
           </fieldset>
-          <fieldset class="program__fieldset">
-            <legend class="program__legend">Контактные данные (владельца кота)</legend>
-            <div class="program__wrapper">
-              <p class="program__wrap">
-                <label class="program__label">
+          <fieldset class="program__fieldset program__fieldset--contacts">
+            <legend class="program__legend program__legend--contacts">Контактные данные (владельца кота)</legend>
+            <div class="program__wrapper program__wrapper--desktop">
+              <p class="program__wrap program__wrap--contacts">
+                <label class="program__label program__label--email" for="email">
                   E-mail:*
-                  <input class="program__input" type="email" name="email" value="kuklachev@gmail.com">
                 </label>
+                <input class="program__input" type="email" name="email" id="email" value="kuklachev@gmail.com">
               </p>
-              <p class="program__wrap">
-                <label class="program__label">
+              <p class="program__wrap program__wrap--contacts">
+                <label class="program__label program__label--phone" for="phone-number">
                   Телефон:*
-                  <input class="program__input" type="tel" name="phone-number" value="8 (960) 900-60-90">
                 </label>
+                <input class="program__input" type="tel" name="phone-number" id="phone-number" value="8 (960) 900-60-90">
               </p>
             </div>
           </fieldset>
-          <fieldset class="program__fieldset">
-            <legend class="program__legend">Комментарий</legend>
+          <fieldset class="program__fieldset program__fieldset--comment">
+            <legend class="program__legend program__legend--comment">Комментарий</legend>
             <textarea class="program__textarea" name="comment">Расскажите обо всех повадках кота</textarea>
           </fieldset>
-          <fieldset class="program__fieldset">
-            <legend class="program__legend">Дополнительно</legend>
+          <fieldset class="program__fieldset program__fieldset--more">
+            <legend class="program__legend program__legend--more">Дополнительно</legend>
             <ul class="program__checkbox-list">
               <li class="program__checkbox-item">
-                <label class="program__label">
-                  <input class="program__input" type="checkbox" name="sweetener" checked="">
-                  Сахарозаменитель
-                </label>
+                <input class="program__input-checkbox visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
+                <label class="program__label" for="sweetener">Сахарозаменитель</label>
               </li>
               <li class="program__checkbox-item">
-                <label class="program__label">
-                  <input class="program__input" type="checkbox" name="water">
-                  Питьевая вода
-                </label>
+                <input class="program__input-checkbox visually-hidden" type="checkbox" id="water" name="water">
+                <label class="program__label" for="water">Питьевая вода</label>
               </li>
               <li class="program__checkbox-item">
-                <label class="program__label">
-                  <input class="program__input" type="checkbox" name="milk">
-                  Молоко
-                </label>
+                <input class="program__input-checkbox visually-hidden" type="checkbox" id="milk" name="milk">
+                <label class="program__label" for="milk">Молоко</label>
               </li>
               <li class="program__checkbox-item">
-                <label class="program__label">
-                  <input class="program__input" type="checkbox" name="vitamins">
-                  Витамины
-                </label>
+                <input class="program__input-checkbox visually-hidden" type="checkbox" id="vitamins" name="vitamins">
+                <label class="program__label" for="vitamins">Витамины</label>
               </li>
             </ul>
           </fieldset>
-          <button class="button program__button">Отправить заявку</button>
-          <p class="program__extra">* — Обязательные поля</p>
+          <div class="program__extra-wrap">
+            <button class="button button--small program__button">Отправить заявку</button>
+            <p class="program__extra">* — Обязательные поля</p>
+          </div>
         </form>
       </section>
-      <section class="contacts container contacts--white">
+      <section class="contacts container">
         <h2 class="visually-hidden">Как нас найти:</h2>
-        <div class="contacts__wrap">
-          <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
+        <div class="contacts__wrap contacts__wrap--grey">
+          <p class="contacts__text">Приглашаем<br>к сотрудничеству дилеров!</p>
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <img class="contacts__map" src="#" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3192231333246!2d30.32550430312595!3d59.93814140638412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1556818017510!5m2!1sru!2sru" width="320" height="360" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <p class="contacts__img-wrapper"><img class="contacts__map" width="320" height="400" src="img/bg-map-mobile@1x.png" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"></p>
       </section>
     </main>
     <footer class="page-footer">
