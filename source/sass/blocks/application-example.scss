@@ -1,7 +1,7 @@
 .application-example {
   background-color: $palette-tertiary;
 
-  padding: 16px 21px 38px 20px;
+  padding: 16px 0 33px;
 }
 
 .application-example__title {
@@ -12,6 +12,7 @@
   line-height: $line-height-headline;
 
   margin-bottom: 23px;
+  padding-left: 20px;
 }
 
 .application-example__description {
@@ -21,11 +22,36 @@
 
   color: $secondary-color;
 
-  margin-bottom: 36px;
+  margin-bottom: 23px;
 }
 
 .application-example__table {
-  margin-bottom: 33px;
+  margin-bottom: 32px;
+
+  tbody {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 280px;
+
+    margin-left: -2px;
+  }
+}
+
+.application-example__table-row {
+  width: 124px;
+
+  padding: 13px 16px 15px;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: 1px solid $palette-outline;
+  border-radius: 3px;
 }
 
 .application-example__table-header {
@@ -36,11 +62,21 @@
   text-transform: lowercase;
 
   color: $secondary-color;
+  background-color: $palette-tertiary;
+
+  position: absolute;
+  bottom: -17px;
+  left: 18px;
+
+  width: 84px;
+
+  text-align: center;
 }
 
 .application-example__table-data {
   font-size: 24px;
   line-height: 24px;
+  text-transform: $text-transform-base;
 }
 
 .application-example__text {
@@ -49,13 +85,89 @@
   line-height: $line-height-secondary;
   text-transform: $text-transform-base;
 
-  margin-bottom: 44px;
+  margin-bottom: 36px;
+
+  text-align: center;
 }
 
-.application-example__statistic,
-.application-example__presentation {
-  // временно
-  min-height: 260px;
+.application-example__cat-image {
+  width: 320px;
+  height: 238px;
+
+  margin-bottom: 27px;
+}
+
+.application-example__comparison-item {
+  &--after {
+    display: none;
+  }
+}
+
+.application-example__before,
+.application-example__after {
+  text-transform: $text-transform-base;
+  font-size: $font-size-secondary;
+  line-height: $line-height-secondary;
+}
+
+.application-example__statistic {
+  padding-right: 21px;
+  padding-left: 20px;
+}
+
+.application-example__buttons {
+  padding-left: 55px;
+  padding-right: 51px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.application-example__before {
+  position: relative;
+
+  border: none;
+
+  background-color: inherit;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 4px;
+    right: -96px;
+
+    width: 84px;
+    height: 14px;
+
+    background-color: $palette-primary;
+
+    border: 1px solid $palette-outline;
+    border-radius: 6px;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 8px;
+    left: 69px;
+
+    width: 35px;
+    height: 6px;
+
+    background-color: $palette-secondary;
+
+    border-radius: 3px;
+
+    z-index: 2;
+  }
+}
+
+.application-example__after {
+  border: none;
+
+  background-color: inherit;
 }
 
 @media (min-width: $tablet-width) {
@@ -76,23 +188,105 @@
     font-size: $font-size-secondary;
     line-height: 24px;
 
-    margin-bottom: 56px;
+    margin-bottom: 51px;
+    padding-right: 6px;
+
+    width: 100%;
+  }
+
+  .application-example__table {
+    tbody {
+      width: 366px;
+    }
+  }
+
+  .application-example__table-row {
+    width: 162px;
+
+    padding-bottom: 18px;
+  }
+
+  .application-example__table-data {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .application-example__table-header {
+    font-size: $font-size-primary;
+    line-height: 14px;
+
+    width: auto;
+
+    bottom: -7px;
+    left: auto;
+
+    padding-left: 8px;
+    padding-right: 8px;
+
+    background-color: $palette-primary;
+  }
+
+  .application-example__text {
+    font-size: 20px;
+    line-height: $line-height-secondary;
+
+    width: 174px;
+
+    text-align: right;
+
+    padding-top: 13px;
+
+    span {
+      display: inline-block;
+
+      padding-top: 9px;
+    }
   }
 
   .application-example__presentation {
-    // временно
-    min-height: 462px;
+    position: relative;
 
-    padding: 0 30px;
-
-    background-color: $palette-tertiary;
+    padding-top: 221px;
   }
 
   .application-example__statistic {
-    // временно
-    min-height: 462px;
-
     padding: 0 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .application-example__comparison {
+    display: flex;
+
+    width: 100%;
+  }
+
+  .application-example__comparison-item {
+    width: 50%;
+
+    position: relative;
+
+    &--before {
+      background-color: $palette-tertiary;
+    }
+
+    &--after {
+      // background-color: $palette-comparison;
+
+      display: block;
+    }
+  }
+
+  .application-example__comparison-item--before .application-example__cat-image {
+    position: absolute;
+
+    top: -171px;
+    left: 189px;
+
+    width: 638px;
+    height: 517px;
   }
 }
 
