@@ -43,7 +43,7 @@
     padding: 37px 30px 529px 118px;
 
     background-image: url("../img/index-can-tablet@1x.jpg");
-    background-position: 29px 238px;
+    background-position: 30px 238px;
 
     text-align: left;
 
@@ -70,7 +70,7 @@
 
     color: $primary-color;
 
-    margin-bottom: 48px;
+    margin-bottom: 50px;
   }
 
   .promo__link {
@@ -80,7 +80,7 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    padding: 54px 0 268px 120px;
+    padding: 54px 0 268px 119px;
 
     position: relative;
 
@@ -90,8 +90,8 @@
       content: "";
 
       position: absolute;
-      top: -27px;
-      left: 490px;
+      top: -26px;
+      left: 487px;
 
       width: 552px;
       height: 499px;
@@ -113,6 +113,6 @@
   }
 
   .promo__slogan {
-    margin-bottom: 53px;
+    margin-bottom: 55px;
   }
 }

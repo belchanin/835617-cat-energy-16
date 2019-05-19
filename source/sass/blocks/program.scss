@@ -29,7 +29,7 @@
 .program__wrap {
   @include reset;
 
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 
   display: flex;
   justify-content: space-between;
@@ -141,7 +141,7 @@
   content: "";
 
   position: absolute;
-  top: 3px;
+  top: 4px;
   left: -37px;
 
   width: 12px;
@@ -167,7 +167,17 @@
 
   color: $secondary-color;
 
-  border: 1px solid #cdcdcd;
+  outline: 1px solid rgba(205,205,205,0.5);
+  border: none;
+
+  &:hover {
+    outline: 1px solid $palette-outline;
+  }
+
+  &:active,
+  &:focus {
+    outline: 2px solid $secondary-color;
+  }
 }
 
 .program__textarea {

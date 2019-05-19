@@ -1,7 +1,7 @@
 .application-example {
   background-color: $palette-tertiary;
 
-  padding: 16px 0 33px;
+  padding: 16px 0 29px;
 }
 
 .application-example__title {
@@ -94,7 +94,7 @@
   width: 320px;
   height: 238px;
 
-  margin-bottom: 27px;
+  margin-bottom: 24px;
 }
 
 .application-example__comparison-item {
@@ -108,6 +108,24 @@
   text-transform: $text-transform-base;
   font-size: $font-size-secondary;
   line-height: $line-height-secondary;
+
+  border: none;
+
+  background-color: inherit;
+
+  padding: 0;
+  padding-bottom: 6px;
+
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    border-bottom: 1px solid rgba(17,17,17,0.4);
+  }
+
+  &:focus,
+  &:active {
+    border: none;
+  }
 }
 
 .application-example__statistic {
@@ -116,58 +134,41 @@
 }
 
 .application-example__buttons {
-  padding-left: 55px;
-  padding-right: 51px;
+  padding: 8px 59px 0 64px;
 
   display: flex;
   justify-content: space-between;
 }
 
-.application-example__before {
-  position: relative;
-
-  border: none;
-
-  background-color: inherit;
-
-  &::after {
-    content: "";
-
-    position: absolute;
-    top: 4px;
-    right: -96px;
-
-    width: 84px;
-    height: 14px;
-
-    background-color: $palette-primary;
-
-    border: 1px solid $palette-outline;
-    border-radius: 6px;
-  }
-
-  &::before {
-    content: "";
-
-    position: absolute;
-    top: 8px;
-    left: 69px;
-
-    width: 35px;
-    height: 6px;
-
-    background-color: $palette-secondary;
-
-    border-radius: 3px;
-
-    z-index: 2;
-  }
+.application-example__bar {
+  padding-top: 2px;
 }
 
-.application-example__after {
-  border: none;
+.application-example__lane {
+  width: 84px;
+  height: 14px;
 
-  background-color: inherit;
+  background-color: $palette-primary;
+
+  border: 1px solid $palette-outline;
+  border-radius: 6px;
+
+  position: relative;
+}
+
+.application-example__toggle {
+  position: absolute;
+  top: 3px;
+  left: 6px;
+
+  width: 35px;
+  height: 6px;
+
+  background-color: $palette-secondary;
+
+  border-radius: 3px;
+
+  z-index: 2;
 }
 
 @media (min-width: $tablet-width) {
@@ -188,7 +189,7 @@
     font-size: $font-size-secondary;
     line-height: 24px;
 
-    margin-bottom: 51px;
+    margin-bottom: 53px;
     padding-right: 6px;
 
     width: 100%;
@@ -246,7 +247,7 @@
   .application-example__presentation {
     position: relative;
 
-    padding-top: 221px;
+    padding-top: 223px;
   }
 
   .application-example__statistic {
@@ -258,14 +259,12 @@
   }
 
   .application-example__comparison {
-    display: flex;
-
     width: 100%;
+    min-height: 366px;
+    background-color: $palette-tertiary;
   }
 
   .application-example__comparison-item {
-    width: 50%;
-
     position: relative;
 
     &--before {
@@ -274,19 +273,110 @@
 
     &--after {
       background-color: $palette-comparison;
-
-      display: block;
     }
   }
 
   .application-example__comparison-item--before .application-example__cat-image {
     position: absolute;
 
-    top: -171px;
-    left: 189px;
+    top: -169px;
+    left: 48px;
 
-    width: 638px;
+    width: 690px;
     height: 517px;
+  }
+
+  .application-example__before,
+  .application-example__after {
+    font-size: 20px;
+
+    border-bottom: 1px dotted rgba(17,17,17,0.23);
+  }
+
+  .application-example__before {
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .application-example__buttons {
+    padding: 0 92px 67px;
+
+    background-color: $palette-tertiary;
+  }
+
+  .application-example__bar {
+    padding-top: 9px;
+  }
+
+  .application-example__lane {
+    position: relative;
+
+    width: 428px;
+    height: 6px;
+
+    border-radius: 2.5px;
+
+    background-color: #dcdcdc;
+  }
+
+  .application-example__toggle {
+    position: absolute;
+
+    top: -13px;
+    left: 200px;
+
+    width: 33px;
+    height: 33px;
+
+    border-radius: 50%;
+    border: 1px solid $palette-outline;
+
+    background-color: $palette-primary;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+
+    &:hover {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+
+      cursor: pointer;
+    }
+
+    &:focus,
+    &:active {
+      width: 32px;
+      height: 32px;
+
+      border: 2px solid $palette-secondary;
+
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+
+      cursor: pointer;
+
+      &::before {
+        top: 10px;
+        left: 11px;
+      }
+    }
+
+    &::before {
+      content: "";
+
+      position: absolute;
+
+      top: 11px;
+      left: 12px;
+
+      width: 9px;
+      height: 8px;
+
+      border-radius: 50%;
+
+      background-color: $palette-secondary;
+    }
   }
 }
 
@@ -298,8 +388,7 @@
   .application-example__title {
     background-color: $palette-primary;
 
-    padding: 0;
-    padding-bottom: 69px;
+    padding: 0 0 75px 38px;
     margin-bottom: 0;
   }
 
@@ -316,24 +405,62 @@
   }
 
   .application-example__statistic {
-    padding: 75px 0 55px;
+    padding: 71px 0 38px 37px;
 
     width: 570px;
   }
 
   .application-example__presentation {
-    padding: 75px 0;
+    padding: 368px 0 0;
 
     width: 730px;
   }
 
   .application-example__description {
-    width: 430px;
+    width: 431px;
 
-    margin-bottom: 71px;
+    padding-right: 0;
+    margin-bottom: 69px;
   }
 
   .application-example__table {
-    margin-bottom: 59px;
+    margin-bottom: 47px;
+  }
+
+  .application-example__table-header {
+    background-color: $palette-tertiary;
+  }
+
+  .application-example__comparison {
+    min-height: auto;
+  }
+
+  .application-example__buttons {
+    padding: 0 41px 67px 119px;
+  }
+
+  .application-example__bar {
+    padding-top: 7px;
+  }
+
+  .application-example__toggle {
+    &::before {
+      width: 8px;
+    }
+  }
+
+  .application-example__comparison-item--before .application-example__cat-image {
+    top: -558px;
+    left: 38px;
+  }
+
+  .application-example__text {
+    width: 327px;
+
+    span {
+      display: inline;
+
+      margin-left: 58px;
+    }
   }
 }
