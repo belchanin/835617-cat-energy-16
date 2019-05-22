@@ -1,5 +1,5 @@
 .program {
-  padding: 16px 20px 29px;
+  padding: 16px 20px 32px;
 }
 
 .program__title {
@@ -192,7 +192,7 @@
 
   border: none;
 
-  margin-bottom: 27px;
+  margin-bottom: 26px;
 
   position: relative;
 
@@ -307,6 +307,9 @@
 
 .program__button {
   margin-bottom: 22px;
+
+  font-size: $font-size-secondary;
+  line-height: $line-height-secondary;
 }
 
 .program__extra {
@@ -349,16 +352,20 @@
     margin-bottom: 22px;
 
     &--contacts {
-      margin-bottom: 36px;
+      margin-bottom: 34px;
     }
 
     &--more {
       margin-bottom: 0;
     }
+
+    &--comment {
+      margin-bottom: 20px;
+    }
   }
 
   .program__wrap {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 
     &:nth-child(3) {
       margin-bottom: 72px;
@@ -519,7 +526,7 @@
     justify-content: space-between;
 
     padding: 0;
-    margin-bottom: 13px;
+    margin-bottom: 15px;
     width: 100%;
   }
 
@@ -556,6 +563,8 @@
 
     margin-right: 61px;
     margin-bottom: 0;
+
+    font-size: 20px;
   }
 
   .program__extra {
@@ -598,6 +607,8 @@
 
       width: 100%;
     }
+
+    padding-bottom: 11px;
   }
 
   .program__label {
@@ -649,17 +660,19 @@
   }
 
   .program__checkbox-list {
-    margin-bottom: 19px;
+    margin-bottom: 21px;
     padding-top: 2px;
   }
 
   .program__fieldset {
+    margin-bottom: 20px;
+
     &:last-of-type {
       margin: 0;
     }
 
-    &--contacts {
-      margin-bottom: 20px;
+    &--comment {
+      margin-bottom: 24px;
     }
   }
 
