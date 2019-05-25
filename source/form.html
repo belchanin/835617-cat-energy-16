@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload"  href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload"  href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -47,13 +49,13 @@
                   <label class="program__label" for="name-of-cat">
                     Имя:*
                   </label>
-                  <input class="program__input" type="text" name="name-of-cat" id="name-of-cat" value="Барсик">
+                  <input class="program__input" type="text" name="name-of-cat" id="name-of-cat" value="Барсик" required>
                 </p>
                 <p class="program__wrap">
                   <label class="program__label" for="weight-of-cat">
                     Вес (кг):*
                   </label>
-                  <input class="program__input" type="text" name="weight-of-cat" id="weight-of-cat" value="7">
+                  <input class="program__input" type="text" name="weight-of-cat" id="weight-of-cat" value="7" required>
                 </p>
                 <p class="program__wrap">
                   <label class="program__label" for="age-of-cat">
@@ -88,18 +90,16 @@
             <legend class="program__legend program__legend--contacts">Контактные данные (владельца кота)</legend>
             <div class="program__wrapper program__wrapper--desktop">
               <p class="program__wrap program__wrap--contacts">
-                <label class="program__label program__label--email" for="email">
+                <label class="program__label" for="email">
                   E-mail:*
-                  <span class="program__icon program__icon--email"><svg><use xlink:href="#icon-mail"></use></svg></span>
                 </label>
-                <input class="program__input" type="email" name="email" id="email" value="kuklachev@gmail.com">
+                <input class="program__input program__input--email" type="email" name="email" id="email" value="kuklachev@gmail.com" required>
               </p>
               <p class="program__wrap program__wrap--contacts">
-                <label class="program__label program__label--phone" for="phone-number">
+                <label class="program__label" for="phone-number">
                   Телефон:*
-                  <span class="program__icon program__icon--phone"><svg><use xlink:href="#icon-phone"></use></svg></span>
                 </label>
-                <input class="program__input" type="tel" name="phone-number" id="phone-number" value="8 (960) 900-60-90">
+                <input class="program__input program__input--phone" type="tel" name="phone-number" id="phone-number" value="8 (960) 900-60-90" required>
               </p>
             </div>
           </fieldset>
@@ -142,7 +142,7 @@
             <p class="contacts__address">ул. Большая Конюшенная, д. 19/8<br><span>Санкт-Петербург</span></p>
           </div>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3192231333246!2d30.32550430312595!3d59.93814140638412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1556818017510!5m2!1sru!2sru" width="320" height="360" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3192231333246!2d30.32550430312595!3d59.93814140638412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1556818017510!5m2!1sru!2sru" width="320" height="360" style="border:0" allowfullscreen></iframe>
         <div class="contacts__wrapper container">
           <p class="contacts__img-wrapper">
             <picture>
@@ -178,6 +178,6 @@
       </div>
     </footer>
     <script src="js/app.js"></script>
-    <script src="js/picturefill.js"></script>
+    <script src="js/picturefill-min.js"></script>
   </body>
 </html>

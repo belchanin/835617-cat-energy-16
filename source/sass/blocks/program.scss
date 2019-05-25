@@ -46,26 +46,6 @@
   position: relative;
 }
 
-.program__icon {
-  &--email svg {
-    width: 18px;
-    height: 14px;
-
-    position: absolute;
-    top: 3px;
-    right: -215px;
-  }
-
-  &--phone svg {
-    width: 21px;
-    height: 21px;
-
-    position: absolute;
-    top: -1px;
-    right: -200px;
-  }
-}
-
 .program__radio-list {
   @include list;
 
@@ -129,6 +109,20 @@
   border-radius: 50%;
 }
 
+.program__input-radio + .program__label:hover::before {
+  border-color: #bababa;
+}
+
+.program__input-radio + .program__label:focus::before,
+.program__input-radio + .program__label:active::before {
+  opacity: 0.3;
+}
+
+.program__input-radio + .program__label:focus,
+.program__input-radio + .program__label:active {
+  opacity: 0.3;
+}
+
 .program__input-radio:checked + .program__label::after {
   content: "";
 
@@ -144,11 +138,52 @@
   background-color: $palette-secondary;
 }
 
+.program__input-radio + .program__label:hover::after {
+  border-color: #bababa;
+}
+
+.program__input-radio + .program__label:focus::after,
+.program__input-radio + .program__label:active::after {
+  opacity: 0.3;
+}
+
 .program__input {
   margin-left: 12px;
   padding: 12px 15px;
 
   flex-grow: 1;
+
+  background-repeat: no-repeat;
+
+  &--phone {
+    background-image: url("../img/icon-phone.svg");
+    background-size: 21px 21px;
+    background-position: 170px center;
+
+    &:focus,
+    &:active {
+      background-image: url("../img/icon-phone-active.svg");
+    }
+
+    &:invalid {
+      background-image: url("../img/icon-phone-error.svg");
+    }
+  }
+
+  &--email {
+    background-image: url("../img/icon-mail.svg");
+    background-size: 18px 14px;
+    background-position: 186px center;
+
+    &:focus,
+    &:active {
+      background-image: url("../img/icon-mail-active.svg");
+    }
+
+    &:invalid {
+      background-image: url("../img/icon-mail-error.svg");
+    }
+  }
 }
 
 .program__input,
@@ -159,7 +194,7 @@
 
   color: $secondary-color;
 
-  outline: 1px solid rgba(205,205,205,0.5);
+  outline: 1px solid rgba(205, 205, 205, 0.5);
   border: none;
 
   &:hover {
@@ -169,6 +204,10 @@
   &:active,
   &:focus {
     outline: 2px solid $secondary-color;
+  }
+
+  &:invalid {
+    outline: 2px solid #ff8282;
   }
 }
 
@@ -283,6 +322,20 @@
   border: 1px solid $palette-outline;
 }
 
+.program__input-checkbox + .program__label:hover::before {
+  border-color: #bababa;
+}
+
+.program__input-checkbox + .program__label:focus::before,
+.program__input-checkbox + .program__label:active::before {
+  opacity: 0.3;
+}
+
+.program__input-checkbox + .program__label:focus,
+.program__input-checkbox + .program__label:active {
+  opacity: 0.3;
+}
+
 .program__input-checkbox:checked + .program__label::after {
   content: "";
 
@@ -296,6 +349,16 @@
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
 }
+
+.program__input-checkbox + .program__label:hover::after {
+  border-color: #bababa;
+}
+
+.program__input-checkbox + .program__label:focus::after,
+.program__input-checkbox + .program__label:active::after {
+  opacity: 0.3;
+}
+
 
 .program__button {
   margin-bottom: 22px;
@@ -367,18 +430,6 @@
   .program__label {
     font-size: 20px;
     line-height: $line-height-secondary;
-  }
-
-  .program__icon {
-    &--email svg {
-      top: 6px;
-      right: -551px;
-    }
-
-    &--phone svg {
-      top: -1px;
-      right: -533px;
-    }
   }
 
   .program__radio-list {
@@ -499,6 +550,14 @@
 
     margin-left: 18px;
     padding: 10px 19px;
+
+    &--email {
+      background-position: 513px center;
+    }
+
+    &--phone {
+      background-position: 497px center;
+    }
   }
 
   .program__textarea {
@@ -605,17 +664,6 @@
     padding-bottom: 11px;
   }
 
-  .program__icon {
-    &--email svg {
-      right: -488px;
-    }
-
-    &--phone svg {
-      top: 2px;
-      right: -468px;
-    }
-  }
-
   .program__radio-list {
     width: 46.75%;
 
@@ -706,5 +754,15 @@
     width: 568px;
 
     margin-right: 82px;
+  }
+
+  .program__input {
+    &--email {
+      background-position: 449px;
+    }
+
+    &--phone {
+      background-position: 432px;
+    }
   }
 }
