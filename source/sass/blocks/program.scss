@@ -44,33 +44,25 @@
   color: $tertiary-color;
 
   position: relative;
+}
 
-  &--email::after {
-    content: "";
+.program__icon {
+  &--email svg {
+    width: 18px;
+    height: 14px;
 
     position: absolute;
     top: 3px;
     right: -215px;
-
-    width: 18px;
-    height: 14px;
-
-    background-image: url("../img/icon-mail.svg");
-    background-repeat: no-repeat;
   }
 
-  &--phone::after {
-    content: "";
+  &--phone svg {
+    width: 21px;
+    height: 21px;
 
     position: absolute;
     top: -1px;
     right: -200px;
-
-    width: 21px;
-    height: 21px;
-
-    background-image: url("../img/icon-phone.svg");
-    background-repeat: no-repeat;
   }
 }
 
@@ -375,15 +367,17 @@
   .program__label {
     font-size: 20px;
     line-height: $line-height-secondary;
+  }
 
-    &--email::after {
+  .program__icon {
+    &--email svg {
+      top: 6px;
       right: -551px;
-      top: 5px;
     }
 
-    &--phone::after {
-      right: -532px;
-      top: 1px;
+    &--phone svg {
+      top: -1px;
+      right: -533px;
     }
   }
 
@@ -611,13 +605,14 @@
     padding-bottom: 11px;
   }
 
-  .program__label {
-    &--email::after {
-      right: -489px;
+  .program__icon {
+    &--email svg {
+      right: -488px;
     }
 
-    &--phone::after {
-      right: -467px;
+    &--phone svg {
+      top: 2px;
+      right: -468px;
     }
   }
 
