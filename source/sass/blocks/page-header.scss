@@ -8,12 +8,12 @@
 .page-header__logo {
   height: 39px;
 
-  &:hover .page-header__logo-image {
+  &[href]:hover .page-header__logo-image {
     opacity: 0.8;
   }
 
-  &:focus .page-header__logo-image,
-  &:active .page-header__logo-image {
+  &[href]:focus .page-header__logo-image,
+  &[href]:active .page-header__logo-image {
     opacity: 0.6;
   }
 }

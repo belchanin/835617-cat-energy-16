@@ -70,6 +70,12 @@
   }
 
   .site-list__item {
+    padding-top: 26px;
+
+    &--active::after {
+      bottom: 13px;
+    }
+
     &--active-index::after {
       content: "";
 
@@ -85,9 +91,10 @@
   }
 
   .site-list__link {
-    &--index {
-      font-size: 20px;
+    font-size: 20px;
+    line-height: 25px;
 
+    &--index {
       color: $quaternary-color;
     }
   }

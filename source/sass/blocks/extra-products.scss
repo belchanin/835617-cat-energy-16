@@ -76,7 +76,7 @@
 
   color: $tertiary-color;
 
-  margin-bottom: 11px;
+  margin-bottom: 16px;
 }
 
 .extra-products__table {
@@ -146,7 +146,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-    padding: 27px 34px 25px 38px;
+    padding: 28px 34px 25px 38px;
 
     border: 1px solid $palette-border-secondary;
 
@@ -167,9 +167,10 @@
     margin-bottom: 78px;
     margin-top: -5px;
     padding-left: 37px;
+    padding-top: 2px;
 
     &::after {
-      top: 22px;
+      top: 25px;
       left: 411px;
       right: -30px;
     }
@@ -178,7 +179,7 @@
       content: "";
 
       position: absolute;
-      top: 22px;
+      top: 25px;
       left: -30px;
 
       width: 28px;
@@ -196,7 +197,7 @@
     font-size: 20px;
     line-height: $line-height-secondary;
 
-    margin-bottom: 26px;
+    margin-bottom: 27px;
   }
 
   .extra-products__table {
@@ -212,7 +213,7 @@
     display: inline-block;
     vertical-align: top;
 
-    margin-left: 53px;
+    margin-left: 52px;
   }
 
   .extra-products__table-header {
@@ -240,16 +241,19 @@
 
   .extra-products__title {
     margin-top: 0;
-    margin-bottom: 80px;
+    margin-bottom: 81px;
     padding-left: 0;
+    padding-top: 4px;
 
     &::after {
       left: 373px;
       right: -70px;
+      top: 26px;
     }
 
     &::before {
       left: -110px;
+      top: 26px;
 
       width: 69px;
     }
@@ -278,6 +282,14 @@
     &::after {
       display: block;
     }
+
+    &:last-child::after {
+      bottom: 0;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 1px;
+    }
   }
 
   .extra-products__item-title {
@@ -302,7 +314,7 @@
     display: table-cell;
     text-align: left;
 
-    width: 46px;
+    width: 47px;
   }
 
   .extra-products__table-header {
@@ -311,7 +323,7 @@
   }
 
   .extra-products__gift {
-    width: 245px;
+    width: 246px;
 
     padding: 188px 42px 39px;
 
