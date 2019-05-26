@@ -134,7 +134,7 @@
 
 @media (min-width: $tablet-width) {
   .extra-products {
-    padding: 0 30px 76px;
+    padding: 0 30px 79px;
   }
 
   .extra-products__list {
@@ -146,7 +146,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-    padding: 28px 34px 25px 38px;
+    padding: 28px 34px 24px 38px;
 
     border: 1px solid $palette-border-secondary;
 
@@ -189,8 +189,12 @@
     }
   }
 
+  .extra-products__button-wrapper {
+    width: 100%;
+  }
+
   .extra-products__button {
-    width: 99.7%;
+    width: 100%;
   }
 
   .extra-products__item-title {
@@ -243,7 +247,7 @@
     margin-top: 0;
     margin-bottom: 81px;
     padding-left: 0;
-    padding-top: 4px;
+    padding-top: 1px;
 
     &::after {
       left: 373px;
@@ -336,7 +340,7 @@
     }
   }
 
-  .extra-products__button {
+  .extra-products__button-wrapper {
     width: 245px;
   }
 }
